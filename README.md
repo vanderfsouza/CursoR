@@ -9,11 +9,12 @@ https://vanderfsouza.github.io/cursor.github.io/
 ## Conteúdo
 
 1. Introdução: Instalação e apresentação do R e do Rstudio
-2. Primeiros passos: interação com o software, princiapis sintaxe e comandos, como obter ajuda, etc.
+2. Primeiros passos: interação com o software, princiapis sintaxe e comandos, como obter ajuda e como instalar pacotes.
 3. Funções no R e sua Aplicação: funções matemáticas, funções estatísticas e operações lógicas.
-4. Leitura e Manipulação de Dados: tipos de variáveis e de estrutura dos dados, entrada e importação de dados, transformações de dados, operações vetoriais e matriciais, indexação.
+4. Leitura e Manipulação de Dados: tipos de variáveis e de estrutura dos dados, entrada e importação de dados, transformações de dados, indexação.
 5. Análise Exploratória de Dados: estatísticas descritivas, gráficos exploratórios.
-6. Modelos Lineares: lógica geral em R, regressão linear, análise de variância, verificação das pressuposições dos modelos lineares.
+6. Modelos Lineares: lógica geral em R da regressão linear e da análise de variância.
+7. Uso do pacote [ExpDes](https://cran.r-project.org/web/packages/ExpDes/ExpDes.pdf) para análises de dados experimentais, verificação das pressuposições e análises dos modelos.
 
 > Arquivos de Dados
 
