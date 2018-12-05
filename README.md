@@ -1,4 +1,5 @@
-# Curso R
+# Curso R  ![](https://www.r-project.org/logo/Rlogo.svg) 
+
 **Curso aplicado de estatística experimental no R**
 
 *BEM VINDO(A)*
@@ -11,3 +12,12 @@
 4. Leitura e Manipulação de Dados: tipos de variáveis e de estrutura dos dados, entrada e importação de dados, transformações de dados, operações vetoriais e matriciais, indexação.
 5. Análise Exploratória de Dados: estatísticas descritivas, gráficos exploratórios.
 6. Modelos Lineares: lógica geral em R, regressão linear, análise de variância, verificação das pressuposições dos modelos lineares.
+
+> Arquivos de Dados
+
+*exemplo1
+*exemplo2
+
+## Instrutor
+
+### Vander Fillipe de Souza
