@@ -1,4 +1,4 @@
-# Curso R  ![](https://www.r-project.org/logo/Rlogo.svg) 
+# Curso R  ![](https://www.r-project.org/Rlogo.png) 
 
 **Curso aplicado de estatística experimental no R**
 
