@@ -6,7 +6,7 @@
 *BEM VINDO(A)*
 
 * Local: Sala nova do LAS/UFLA 
-* Início: 14/01/2019
+* Início previsto: 14/01/2019
 
 ## Objetivo
 
@@ -27,7 +27,7 @@ Tornar os participantes aptos a utilizarem o software R para análises de dados 
 
 *Em breve*
 
-https://sig.ufla.br/
+[sig.ufla.br](https://sig.ufla.br/)
 
 ## Instrutor
 
