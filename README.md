@@ -1,8 +1,8 @@
 https://vanderfsouza.github.io/cursor.github.io/
 
-# Curso R  ![](https://www.r-project.org/Rlogo.png) 
+![](https://www.r-project.org/Rlogo.png) 
 
-**Curso aplicado de estatística experimental no R**
+# **Curso aplicado de estatística experimental no R**
 
 *BEM VINDO(A)*
 
