@@ -1,4 +1,3 @@
-https://vanderfsouza.github.io/cursor.github.io/
 
 ![](https://www.r-project.org/Rlogo.png) 
 
