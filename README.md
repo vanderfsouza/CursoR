@@ -17,6 +17,10 @@ https://vanderfsouza.github.io/cursor.github.io/
 7. Uso do pacote [ExpDes](https://cran.r-project.org/web/packages/ExpDes/ExpDes.pdf) para análises de dados experimentais: verificação das pressuposições, DIC, DBC, Fatorial (duplo e triplo, com e sem testemunha adicional), parcela subdividida; testes de comparações múltiplas.
 8. Construção de gráficos no R.
 
+## Inscrição
+
+* [https://sig.ufla.br/]
+
 ## Instrutor
 
 > Vander Fillipe de Souza
