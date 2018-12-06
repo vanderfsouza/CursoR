@@ -1,10 +1,17 @@
 https://vanderfsouza.github.io/cursor.github.io/
 
+*BEM VINDO(A)*
+
 ![](https://www.r-project.org/Rlogo.png) 
 
 # **Curso aplicado de estatística experimental no R**
 
-*BEM VINDO(A)*
+* Local: Sala nova do LAS/UFLA 
+* Início: 14/01/2019
+
+## Objetivo
+
+Tornar os participantes aptos a utilizarem o R para análise de dados experimentais.
 
 ## Conteúdo
 
@@ -19,7 +26,8 @@ https://vanderfsouza.github.io/cursor.github.io/
 
 ## Inscrição
 
-* [https://sig.ufla.br/]
+* https://sig.ufla.br/
+*Em breve*
 
 ## Instrutor
 
