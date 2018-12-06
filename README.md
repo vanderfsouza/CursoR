@@ -11,7 +11,7 @@ https://vanderfsouza.github.io/cursor.github.io/
 
 ## Objetivo
 
-Tornar os participantes aptos a utilizarem o R para análise de dados experimentais.
+Tornar os participantes aptos a utilizarem o software R para análises de dados experimentais.
 
 ## Conteúdo
 
