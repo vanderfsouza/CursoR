@@ -15,7 +15,7 @@ Tornar os participantes aptos a utilizarem o software R para análises de dados 
 ## Conteúdo
 
 1. Introdução: Instalação e apresentação do [R](https://cran.r-project.org/) e do [Rstudio](https://www.rstudio.com/products/rstudio/download/#download).
-2. Primeiros passos: interação com o software, princiapis sintaxe e comandos, como obter ajuda e como instalar pacotes.
+2. Primeiros passos: interação com o software, principais sintaxe e comandos, como obter ajuda e como instalar pacotes.
 3. Funções no R e Aplicações: funções matemáticas, funções estatísticas e operações lógicas.
 4. Leitura e Manipulação de Dados: tipos de variáveis e de estrutura dos dados, entrada e importação de dados, transformações de dados, indexação.
 5. Análise Exploratória de Dados: estatísticas descritivas, gráficos exploratórios.
