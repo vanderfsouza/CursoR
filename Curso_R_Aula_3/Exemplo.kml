@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:kml="http://www.opengis.net/kml/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>R2G2 - Shapes</name>
+	<description>Produced using Shapes2GE R script</description>
+	<Style id="sn_ylw-pushpin">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF0076FF</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin0">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF00EBFF</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin1">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF00FF9D</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin2">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF00FF27</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin3">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF4EFF00</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin4">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FFC4FF00</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin5">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FFFFC400</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin6">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FFFF4E00</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin7">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FFFF0027</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin8">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FFFF009D</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin9">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FFEB00FF</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin10">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF7600FF</color>
+		</PolyStyle>
+	</Style>
+ 	<Style id="sn_ylw-pushpin11">
+		<LineStyle id="khLineStyle708">
+			<color>ff000000</color>
+			<width>0.5</width>
+		</LineStyle>
+		<PolyStyle id="khPolyStyle709">
+			<color>FF0000FF</color>
+		</PolyStyle>
+	</Style>
+ <Folder>
+<name>Group_22</name>
+ 	<Placemark>
+		<name>group </name>
+		<styleUrl>#sn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-52.3425,-31.4111590008039,110000
+					-52.7668268558987,-31.7711966529321,110000
+					-52.3425,-32.1326409991961,110000
+					-51.9181731441013,-31.7711966529321,110000
+					-52.3425,-31.4111590008039,110000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_25</name>
+ 	<Placemark>
+		<name>group 0</name>
+		<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-42.8019,-4.72748096094965,125000
+					-43.1650506692615,-5.08909831432903,125000
+					-42.8019,-5.45091903905037,125000
+					-42.4387493307386,-5.08909831432903,125000
+					-42.8019,-4.72748096094965,125000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_26</name>
+ 	<Placemark>
+		<name>group 1</name>
+		<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-60.1458,-12.3790290370229,130000
+					-60.5164982264093,-12.7403420462184,130000
+					-60.1458,-13.1021709629771,130000
+					-59.7751017735907,-12.7403420462184,130000
+					-60.1458,-12.3790290370229,130000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ 	<Placemark>
+		<name>group 1</name>
+		<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-54.8058,-21.8595717675915,130000
+					-55.1960080756959,-22.2203348236293,130000
+					-54.8058,-22.5820282324086,130000
+					-54.4155919243041,-22.2203348236293,130000
+					-54.8058,-21.8595717675915,130000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_30</name>
+ 	<Placemark>
+		<name>group 2</name>
+		<styleUrl>#sn_ylw-pushpin2</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-48.5103,-8.47253804889988,150000
+					-48.876303955114,-8.83402259869245,150000
+					-48.5103,-9.19586195110013,150000
+					-48.144296044886,-8.83402259869245,150000
+					-48.5103,-8.47253804889988,150000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_31</name>
+ 	<Placemark>
+		<name>group 3</name>
+		<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-47.6667,-15.255215590265,155000
+					-48.0420406173512,-15.6163812600983,155000
+					-47.6667,-15.978184409735,155000
+					-47.2913593826488,-15.6163812600983,155000
+					-47.6667,-15.255215590265,155000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_33</name>
+ 	<Placemark>
+		<name>group 4</name>
+		<styleUrl>#sn_ylw-pushpin4</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-37.8619,-10.3261773087805,165000
+					-38.2299068460511,-10.6875846219835,165000
+					-37.8619,-11.0494226912195,165000
+					-37.4938931539489,-10.6875846219835,165000
+					-37.8619,-10.3261773087805,165000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_38</name>
+ 	<Placemark>
+		<name>group 5</name>
+		<styleUrl>#sn_ylw-pushpin5</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-43.1111,-3.26326689857224,190000
+					-43.4735583046396,-3.62492765844996,190000
+					-43.1111,-3.98673310142776,190000
+					-42.7486416953604,-3.62492765844996,190000
+					-43.1111,-3.26326689857224,190000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_39</name>
+ 	<Placemark>
+		<name>group 6</name>
+		<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-36.3522,-9.54445987910425,195000
+					-36.7193134831304,-9.90590068642188,195000
+					-36.3522,-10.2677401208958,195000
+					-35.9850865168696,-9.90590068642188,195000
+					-36.3522,-9.54445987910425,195000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_40</name>
+ 	<Placemark>
+		<name>group 7</name>
+		<styleUrl>#sn_ylw-pushpin7</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-60.6733,3.18503880942075,2e+05
+					-61.0354784312763,2.82324368524113,2e+05
+					-60.6733,2.46156119057925,2e+05
+					-60.3111215687237,2.82324368524113,2e+05
+					-60.6733,3.18503880942075,2e+05
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_46</name>
+ 	<Placemark>
+		<name>group 8</name>
+		<styleUrl>#sn_ylw-pushpin8</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-47.6489,-22.363794338211,230000
+					-48.0405066556095,-22.7245231480168,230000
+					-47.6489,-23.086205661789,230000
+					-47.2572933443905,-22.7245231480168,230000
+					-47.6489,-22.363794338211,230000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_48</name>
+ 	<Placemark>
+		<name>group 9</name>
+		<styleUrl>#sn_ylw-pushpin9</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-57.6789,-15.7091307023926,240000
+					-58.0550697103697,-16.0702715263245,240000
+					-57.6789,-16.4320692976074,240000
+					-57.3027302896303,-16.0702715263245,240000
+					-57.6789,-15.7091307023926,240000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_49</name>
+ 	<Placemark>
+		<name>group 10</name>
+		<styleUrl>#sn_ylw-pushpin10</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-55.5025,-11.5026059073142,245000
+					-55.8719873211952,-11.8639602965605,245000
+					-55.5025,-12.2257940926858,245000
+					-55.1330126788048,-11.8639602965605,245000
+					-55.5025,-11.5026059073142,245000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+ <Folder>
+<name>Group_50</name>
+ 	<Placemark>
+		<name>group 11</name>
+		<styleUrl>#sn_ylw-pushpin11</styleUrl>
+		<Polygon>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-44.2467,-19.10445569959,250000
+					-44.6299510075104,-19.4653972717809,250000
+					-44.2467,-19.82714430041,250000
+					-43.8634489924896,-19.4653972717809,250000
+					-44.2467,-19.10445569959,250000
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+ </Folder>
+	</Document>
+</kml>
