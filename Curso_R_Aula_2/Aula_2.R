@@ -1,10 +1,7 @@
 ############################################################
 ##                                                        ##
-## INTRODU«√O AO PROGRAMA ESTATÕSCO R - 2017              ##
+## INTRODU√á√ÉO AO PROGRAMA ESTAT√çSCO R - 2018              ##
 ##                                                        ##  
-## VANDER FILLIPE SOUZA - vanderfsouza@gmail.com          ##
-## KAIO OLÕMPIO DAS GRA«AS DIAS - Kaioolimpio@hotmail.com ##
-##                                                        ##
 ############################################################
 
 # Limpar o ambiente
@@ -19,7 +16,7 @@ rm(list=ls())
 #  Verificar Diretorio
 getwd()
 #  Mudar o Diretorio
-setwd("C:\\Users\\Vander\\Desktop\\Curso R\\Curso_R_Aula_2")
+setwd("C:\\Users\\...")
 
 # Importantar banco de dados
 leite<- read.table("leite.txt", header=T, dec=",") #separador decimais 'dec' deve corresponder ao usado no arquivo
@@ -29,86 +26,83 @@ str(leite)
 leite$trat<-as.factor(leite$trat)
 str(leite)
 
-## EstatÌstica Descritiva ##
+## Estat√≠stica Descritiva ##
 library("pastecs")
 stat.desc(leite)
 
 ## ANOVA
-aov.leite<- aov(prod ~ trat, contrasts=list(trat="contr.sum"),data=leite) #an·lise de vari‚ncia
+aov.leite<- aov(prod ~ trat, contrasts=list(trat="contr.sum"),data=leite) #an√°lise de vari√¢ncia
 A<- summary (aov.leite) #organiza o quadro da ANAVA
 A
 B<-anova(aov.leite)
 B
 ##
 tapply(leite$prod, leite$trat,mean)
-mean(leite$prod) # MÈdia geral ou intercept
+mean(leite$prod) # M√©dia geral ou intercept
 ##
 names(aov.leite)
 aov.leite$coefficients
 
-####################################################
-###verificar Pressupostos da an·lise de vari‚ncia###
-####################################################
+######################################################
+### verificar Pressupostos da an√°lise de vari√¢ncia ###
+######################################################
 names(aov.leite)
-leite.residuals<- aov.leite$residuals #armazenando os erros ou resÌduos
+leite.residuals<- aov.leite$residuals #armazenando os erros ou res√≠duos
 leite.residuals
-par(mfrow=c(2,2)) # esse comando divide a janela gr·fica numa matriz 2x2
+par(mfrow=c(2,2)) # esse comando divide a janela gr√°fica numa matriz 2x2
 plot(aov.leite)
 par(mfrow=c(1,1))
 
-## Link interessante
-# https://onlinecourses.science.psu.edu/stat501/node/36  (Residuals vs Fitted)
-
-## teste de Normalidade DOS ERROS##
+## teste de Normalidade dos Res√≠duos ##
 #---------------------------------#
 shapiro.test (leite.residuals) 
-# H0 = HipÛtese È de que os erros seguem distribuiÁ„o normal.
-# H1 = HipÛtese alternativa È de que os erros n„o seguem distribuica normal.
+# H0 = Hip√≥tese √© de que os erros seguem distribui√ß√£o normal.
+# H1 = Hip√≥tese alternativa √© de que os erros n√£o seguem distribuica normal.
 
 #nesse caso, como o p-value = 0.88
-# ou seja, >0.05 ou 0.01 ou qualquer alpha adotado, n„o se rejeita a hipotese de normalidade 
+# ou seja, >0.05 ou 0.01 ou qualquer alpha adotado, n√£o se rejeita a hipotese de normalidade 
 # Tudo OK nesse caso!
 
 #install.packages("fBasics")
-library(fBasics) #carregando pacote fBasics pois ele contÈm a funÁ„o qqnormPlot().
+library(fBasics) #carregando pacote fBasics pois ele cont√©m a fun√ß√£o qqnormPlot().
 qqnorm(leite.residuals) #verificando a normalidade
 qqnormPlot(leite.residuals)
 
 #install.packages("nortest")
-require(nortest)#mesma funÁ„o do library
-lillie.test(leite.residuals) #outra opÁ„o para teste de normalidade
+require(nortest)#mesma fun√ß√£o do library
+lillie.test(leite.residuals) #outra op√ß√£o para teste de normalidade
 
 ###
-##teste de homogeneidade de vari‚ncias (homocedasticidade)#
+##teste de homogeneidade de vari√¢ncias (homocedasticidade)#
 #---------------------------------------------------------#
 bartlett.test(prod~trat, data=leite)
-bartlett.test(leite$prod, leite$trat) #n„o È muito recomentado para dados n„o normais.
-# H0 = HipÛtese È de que os erros s„o homogeneos.
-# H1 = HipÛtese alternativa È de que os erros n„o s„o homogeneos.
-# Pelo resultado pvalue = 0.2324 n„o se rejeita H0.
+bartlett.test(leite$prod, leite$trat) #n√£o √© muito recomentado para dados n√£o normais.
+# H0 = Hip√≥tese √© de que os erros s√£o homogeneos.
+# H1 = Hip√≥tese alternativa √© de que os erros n√£o s√£o homogeneos.
+# Pelo resultado pvalue = 0.2324 n√£o se rejeita H0.
 
 #install.packages("car")
 require(car)
 leveneTest(leite$prod~leite$trat, center=mean) 
-#outra opÁ„o menos suscetivel a falta de normalidade.
+#outra op√ß√£o menos suscetivel a falta de normalidade.
 
-## IndependÍncia dos erros#
+## Independ√™ncia dos erros#
 #-----------------------------------------#
-library("car")#j· foi chamado anteriormente
+library("car")#j√° foi chamado anteriormente
 dwt(lm(aov.leite)) #
-# H0 = HipÛtese È de que os erros s„o independentes.
-# H1 = HipÛtese alternativa È de que os erros n„o s„o independentes.
-# Pelo resultado pvalue = 0.258 n„o se rejeita H0.
+# H0 = Hip√≥tese √© de que os erros s√£o independentes.
+# H1 = Hip√≥tese alternativa √© de que os erros n√£o s√£o independentes.
+# Pelo resultado pvalue = 0.258 n√£o se rejeita H0.
 
 ########################################
-####Teste de comparaÁıes multiplas######
+####Teste de compara√ß√µes multiplas######
 ########################################
 
 Total<-tapply(leite$prod,leite$trat,mean) #total por tratamento
 Total
 
 ###
-aov.leite<- aov(prod ~ trat, data=leite, contrasts=list(trat="contr.sum")) #an·lise de vari‚ncia
+aov.leite<- aov(prod ~ trat, data=leite, contrasts=list(trat="contr.sum")) #an√°lise de vari√¢ncia
 anova(aov.leite)
 
 #--------------
@@ -117,13 +111,13 @@ anova(aov.leite)
 #install.packages("agricolae")
 library(agricolae)
 ### 
-teste.scheffe <- scheffe.test(aov.leite, "trat", main="") #faz o teste de mÈdias (scheffÈ)
+teste.scheffe <- scheffe.test(aov.leite, "trat", main="") #faz o teste de m√©dias (scheff√©)
 teste.scheffe
 ###
 ###
 bar.group(teste.scheffe$groups, ylim=c(0,40), density=4, border="blue",
           las=1, main='Teste Scheffe',
-          xlab='Tipos de RaÁ„o', ylab='ProduÁ„o de leite (kg)') #plota o gr·fico com as mÈdias
+          xlab='Tipos de Ra√ß√£o', ylab='Produ√ß√£o de leite (kg)') #plota o gr√°fico com as m√©dias
 abline(h=0, col='black')
 
 ########################
@@ -148,10 +142,10 @@ scottknott(leite$prod, leite$trat, df, MSerror, alpha = 0.05, group= T, main= NU
 tukey(leite$prod,leite$trat, df, MSerror, alpha = 0.05, group= T, main= NULL)
 
 ###### 
-## ExercÌcios
-## 1)	Importar banco de dados "phosphorus.txt" (encontra-se na pasta Apostila R).
+## Exerc√≠cios
+## 1) Importar banco de dados "phosphorus.txt"
 ## 2) Verifique a normalidade dos residuos
-## 3) Fazer uma an·lise de vari‚ncia
+## 3) Fazer uma an√°lise de vari√¢ncia
 ## 4) Fazer o teste de agrupamento de Scott knott
 
 ############################
@@ -170,7 +164,7 @@ write.csv(rcbd$book,"SORTEIO.csv",row.names=T)
 
 
 ###### 
-## ExercÌcios
+## Exerc√≠cios
 # 5) Fazer um sorteio em DBA (Delineamento de blocos aumentados) ?
 # 6) Fazer um sorteio em lattice triple ?
 
@@ -182,7 +176,7 @@ write.csv(rcbd$book,"SORTEIO.csv",row.names=T)
 ###         ###
 ###############
 
-dbc<-read.table("dbc.txt",h=T) # os nomes n„o podem conter espaÁo
+dbc<-read.table("dbc.txt",h=T) # os nomes n√£o podem conter espa√ßo
 names(dbc)
 summary(dbc)
 str(dbc)
@@ -191,7 +185,7 @@ dbc$estag<-as.factor(dbc$estag)
 dbc$bloco<-as.factor(dbc$bloco)
 str(dbc)
 
-###outra opÁ„o
+###outra op√ß√£o
 dbc<-transform(dbc, estag=factor(estag),bloco=factor(bloco))
 str(dbc)
 
@@ -207,7 +201,7 @@ par(mfrow=c(1,1))
 ## teste para normalidade dos erros
 shapiro.test(residuos)
 
-# N‚o tem normalidades dos erros
+# N√¢o tem normalidades dos erros
 # O que fazer? 
 
 ## 1) Modelo lineares generalizados
@@ -215,10 +209,10 @@ shapiro.test(residuos)
 
 ######
 
-## teste para homogeneidade de vari‚ncias
+## teste para homogeneidade de vari√¢ncias
 bartlett.test(dbc$resp , dbc$bloco , dbc$estag)
 
-#an·lise de vari‚ncia utilizando o ExpDes
+#an√°lise de vari√¢ncia utilizando o ExpDes
 library(ExpDes)
 rbd(dbc$estag, dbc$bloco, dbc$resp, mcomp = "sk", sigT = 0.05, sigF = 0.05)
 
