@@ -1,6 +1,6 @@
 ###############################################
 ##                                           ##
-## INTRODU«√O AO PROGRAMA ESTATÕSCO R - 2017 ##
+## INTRODU√á√ÉO AO PROGRAMA ESTAT√çSCO R - 2018 ##
 ##                                           ##
 ###############################################
 
@@ -10,16 +10,16 @@ ls()
 
 ##########################
 
-####operaÁıes b·sicas#####
+####opera√ß√µes b√°sicas#####
 #   DICAS:
-#   abuse dos coment·rios, um cÛdigo brilhante n„o tem utilidade se
-#   vocÍ n„o lembrar para que servem os comandos!
+#   abuse dos coment√°rios, um c√≥digo brilhante n√£o tem utilidade se
+#   voc√™ n√£o lembrar para que servem os comandos!
 4+3  ### 
 7-3
 7*3
 7^2; 7**2 # um ou outro (PONTO E VIRGULA TERMINA UM COMANDO)
 7/2
-7%/%2#divis„o de inteiro
+7%/%2#divis√£o de inteiro
 1:10
 ##
 x<-7/3
@@ -30,10 +30,10 @@ sqrt(9) #raiz quadrada
 factorial(4)#fatorial
 0/0 ### NaN (not a number)
 
-a<- 5; b=5  #ATRIBUI«√O!
+a<- 5; b=5  #ATRIBUI√á√ÉO!
 a; b
 
-a+b #n„o armazena na memÛria
+a+b #n√£o armazena na mem√≥ria
 a*b
 
 ab<-a+b #objeto criado e armazenado
@@ -44,15 +44,15 @@ axb
 exemplo<-1
 Exemplo<-2
 EXEMPLO<-3
-exemplo<-4 #sobreposiÁ„o
+exemplo<-4 #sobreposi√ß√£o
 
 ls() # observar workspace
-rm(exemplo) # remoÁ„o de objeto
+rm(exemplo) # remo√ß√£o de objeto
 ls() # observar workspace
 rm(list=ls()) #remover todos os objetos
 
-###indentaÁ„o
-abc<- (5+3       ###continuaÁ„o "+"
+###indenta√ß√£o
+abc<- (5+3       ###continua√ß√£o "+"
        +4+5)
 
 def<-(3*11+(4-2+
@@ -60,7 +60,7 @@ def<-(3*11+(4-2+
         1+100-21-10+1)
 def
 ###gerar sequencias: 
-x<-seq(1, 5, 0.5) #comeÁa em 1 e vai atÈ 5, variando em 0.5
+x<-seq(1, 5, 0.5) #come√ßa em 1 e vai at√© 5, variando em 0.5
 x
 y<-seq(length=9, from=1, to=5) 
 
@@ -99,7 +99,7 @@ attributes(x)
 is.vector(x)
 is.numeric(x)
 is.integer(x)
-is.factor(x) # O que È um fator?
+is.factor(x) # O que √© um fator?
 
 x[3:5]
 x[-2]
@@ -131,12 +131,12 @@ x["Atletico"]
 x[c("Atletico","Cruzeiro")]
 
 ##Matriz
-## Um arranjo de duas dimensıes.
+## Um arranjo de duas dimens√µes.
 X <- matrix(1:9, nrow=3, ncol=3)
 X
 class(X)
 mode(X)
-typeof(X) # tipo de armazenamento È inteiro (integer)
+typeof(X) # tipo de armazenamento √© inteiro (integer)
 dim(X) ## ncol(X) e nrow(X).
 str(X)
 attributes(X)
@@ -155,7 +155,7 @@ X[,c(3,2,1)]
 X[3:1,c(3,2,1)]
 
 ###########
-## Um arranjo de 3 dimensıes (c˙bico).
+## Um arranjo de 3 dimens√µes (c√∫bico).
 X <- array(1:24, dim=c(3,4,2))
 X
 # uma matriz 3 por 4 na frente e outra atraz
@@ -178,17 +178,21 @@ X[,1,] # fixa a primeira coluna das duas paginas
 X[,,1] # fixa a primeira pagina
 
 ###### 
-## ExercÌcios
+## Exerc√≠cios
 ##
-# 1) Crie os objetos a, b e c. a(1,2,3,4,5,6,7,8,9,10);  b(A,B,C,D,E,F); c(10,20,30,40,50)
+# 1) Crie 3 objetos com as respectivas sequ√™ncias: 
+# a) 1,2,3,4,5,6,7,8,9,10 
+# b) A,B,C,D,E,F 
+# c) 10,20,30,40,50
 # 
 # 1.1) Qual o tipo da cada objeto? 
 # 1.2) Transforme o vetor b em um fator 
 # 1.3) Acesse o quarto elemento do conjunto b.
-# 1.4) Usando a funÁ„o length, obtenha o tamanho de cada um dos vetores
+# 1.4) Usando a fun√ß√£o length, obtenha o tamanho de cada um dos vetores
 # 1.5) Crie um objeto D com os vetores a b e c.
-# 2) Crie um vetor de tamanho 100, sendo uma sequÍncia de 1 a 10 repetida 10 vezes. Dica use a funÁ„o rep().
 #
+# 2) Crie um vetor de tamanho 100, sendo uma sequ√™ncia de 1 a 10 repetida 10 vezes. 
+# Dica use a fun√ß√£o rep().
 
 rm(list=ls())
 ls()
@@ -196,7 +200,7 @@ ls()
 ## Um data frame.
 
 brasileiro <- data.frame(id=1:4,
-                 times=c("AtlÈtico", "Cruzeiro", "S„o Paulo","Internacional"),
+                 times=c("Atl√©tico", "Cruzeiro", "S√£o Paulo","Internacional"),
                  pontos=c(45,80,52,50), 
                  sg=c(6,26,12,9))
 
@@ -253,13 +257,13 @@ L[-2] # exlcuir o segundo item da lista
 
 #######################
 ##Exemplo de milho pipoca 
-## Mostra o diretÛrio de trabalho.
+## Mostra o diret√≥rio de trabalho.
 getwd()
 setwd("C:\\Users\\Desktop\\...")
 getwd()
 
 
-## Mostra os arquivos dentro no diretÛrio.
+## Mostra os arquivos dentro no diret√≥rio.
 list.files()
 
 ####Importar arquivo de dados
@@ -286,7 +290,7 @@ sel <- pipoca$CE>200 & pipoca$peso>=70
 sel
 pipoca[sel,]
 
-## O operador ! inverte um vetor lÛgico.
+## O operador ! inverte um vetor l√≥gico.
 !sel # como se multiplicar por -1
 pipoca[!sel,]
 
@@ -301,24 +305,24 @@ which(pipoca$CE>100)
 
 
 ############
-#Convers„o
+#Convers√£o
 
-apropos("^as\\.") # lista de funÁıes q fazem conversıes
-# a funÁ„o apropos lista as funÁıes (mais para os pacotes que j· foram carregados)
+apropos("^as\\.") # lista de fun√ß√µes q fazem convers√µes
+# a fun√ß√£o apropos lista as fun√ß√µes (mais para os pacotes que j√° foram carregados)
 
 #############
-##########CUIDADO########
-##Nunca converter fator em numerico diretamente
+########## CUIDADO ########
+## Nunca converter fator em numerico diretamente
 # Factor==>character
-#character==>numeric
-## Convers„o.
+# character==>numeric
+## Convers√£o.
 
-##o que È um fator?
+## o que √© um fator?
 
-## Mostra informaÁıes da sess„o, versıes e pacotes.
+## Mostra informa√ß√µes da sess√£o, vers√µes e pacotes.
 sessionInfo()
 
-## Mais informaÁıes.
+## Mais informa√ß√µes.
 cbind(Sys.info())
 
 ## Salva a imagem (objetos criados) para serem carregados no futuro ou
@@ -327,7 +331,7 @@ save.image("Embrapa.RData")
 
 rm(list=ls());ls()
 
-## Carrega sess„o.
+## Carrega sess√£o.
 load("Embrapa.RData")
 ls() #carrega os objetos que ficou na memoria
 
@@ -341,22 +345,22 @@ ls() #carrega os objetos que ficou na memoria
 help(rep)
 ?rep 
 rep ##TAB + F1
-??rep #lista pacote e funÁ„o
+??rep #lista pacote e fun√ß√£o
 #internet [R]
 citation()
 
 ###### 
-## ExercÌcios
-## 3)	Importar banco de dados "phosphorus.txt" (encontra-se na pasta Apostila R).
+## Exerc√≠cios
+## 3)	Importar banco de dados "phosphorus.txt"...
 # a)	Qual a classe desse banco de dados?
-# b)	Quais os nomes das vari·veis presentes nesse arquivo?
-# c)	Qual È o tipo de cada vari·vel?
+# b)	Quais os nomes das vari√°veis presentes nesse arquivo?
+# c)	Qual √© o tipo de cada vari√°vel?
 # d)	Qual o valor da linha 5 e coluna 3?
 # e)	Transforme a coluna 2 em caracter.
-# f)	Transforme em numÈrico novamente.
+# f)	Transforme em num√©rico novamente.
 #
 
-## 4)	Importar banco de dados "phosphorus.txt" (encontra-se na pasta Apostila R).
-#    a)	Qual a mÈdia de cada genotipo para cada variavel resposta?
+## 4)	Importar banco de dados "phosphorus.txt"...
+#    a) Qual a m√©dia de cada genotipo para cada variavel resposta?
 #    b) Subistituir os valores de zero na coluna 2 por 30.
 ##
