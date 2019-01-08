@@ -12,14 +12,15 @@ ls()
 
 ####operações básicas#####
 #   DICAS:
-#   abuse dos comentários, um código brilhante não tem utilidade se
-#   você não lembrar para que servem os comandos!
-4+3  ### 
+#   use '#' para realizar comentários. O que é escrito após o '#' não é "lido" como comando pelo R. 
+#   abuse dos comentários, um código brilhante não tem utilidade se você não lembrar para que servem os comandos!
+
+4+3
 7-3
 7*3
-7^2; 7**2 # um ou outro (PONTO E VIRGULA TERMINA UM COMANDO)
+7^2; 7**2 # mesmo resultado (PONTO E VIRGULA TERMINA UM COMANDO)
 7/2
-7%/%2#divisão de inteiro
+7%/%2 #divisão de inteiro
 1:10
 ##
 x<-7/3
@@ -52,7 +53,7 @@ ls() # observar workspace
 rm(list=ls()) #remover todos os objetos
 
 ###indentação
-abc<- (5+3       ###continuação "+"
+abc<- (5+3       ### "+" demanda um complemento no código
        +4+5)
 
 def<-(3*11+(4-2+
@@ -280,6 +281,7 @@ mean(pipoca$CE, na.rm=T)
 sd(pipoca$CE, na.rm=T)
 
 pipoca1<-na.omit(pipoca)
+
 ## Selecionando as pipocas com CE maior que 30.
 sel <- pipoca$CE>200; sel
 pipoca[sel,]
@@ -302,7 +304,6 @@ any(pipoca$CE>10)
 sum(pipoca$CE>200)
 
 which(pipoca$CE>100)
-
 
 ############
 #Conversão
