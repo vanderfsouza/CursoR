@@ -4,13 +4,14 @@
 ##                                           ##
 ###############################################
 
+#### Limpar Banco de Dados do R ####
 ls()
 rm(list=ls())
 ls()
 
 ##########################
 
-####operações básicas#####
+#### Operações Básicas #####
 #   DICAS:
 #   use '#' para realizar comentários. O que é escrito após o '#' não é "lido" como comando pelo R. 
 #   abuse dos comentários, um código brilhante não tem utilidade se você não lembrar para que servem os comandos!
@@ -52,7 +53,7 @@ rm(exemplo) # remoção de objeto
 ls() # observar workspace
 rm(list=ls()) #remover todos os objetos
 
-###indentação
+#### Indentação ####
 abc<- (5+3       ### "+" demanda um complemento no código
        +4+5)
 
@@ -60,7 +61,8 @@ def<-(3*11+(4-2+
               22-11)-
         1+100-21-10+1)
 def
-###gerar sequencias: 
+
+### Gerar sequencias: 
 x<-seq(1, 5, 0.5) #começa em 1 e vai até 5, variando em 0.5
 x
 y<-seq(length=9, from=1, to=5) 
@@ -76,8 +78,8 @@ rep(1, 30)
 rep(1:3, each =10)
 rep(1:3, times =10)
 
-########################
-###########
+##### Estrutura de Dados #####
+
 x <- 10:15
 x
 y<- c("W","Y","K")
@@ -107,10 +109,12 @@ x[-2]
 x[c(2,4)]
 x[c(2,4)]<-30
 x
+
 ## Vetor nomeado.
 
 x <- c(Flamengo=7.8, Atletico=4, Santos=8.5, Cruzeiro=10, Democrata=7.1)
 x
+
 ## Atributos.
 class(x)
 mode(x) 
@@ -197,8 +201,8 @@ X[,,1] # fixa a primeira pagina
 
 rm(list=ls())
 ls()
-########
-## Um data frame.
+
+#### Data Frame ####
 
 brasileiro <- data.frame(id=1:4,
                  times=c("Atlético", "Cruzeiro", "São Paulo","Internacional"),
@@ -223,7 +227,8 @@ brasileiro[,c("pontos", "sg")]
 brasileiro[1:3,c("pontos", "sg")]
 brasileiro$pontos
 
-## Uma lista.
+#### Lista ####
+
 X <- array(1:24, dim=c(3,4,2))
 X
 ##
@@ -257,12 +262,80 @@ L$item3[,"pontos"]
 L[-2] # exlcuir o segundo item da lista
 
 #######################
+
+#### Funções ####
+
+## Mostra informações da sessão, versões e pacotes.
+sessionInfo()
+
+## Mais informações.
+cbind(Sys.info())
+
+# Criando Funções
+
+media = function(x=0,y=0){
+  result= (x + y)/2
+  return(result)
+}
+media(9,-10)
+media()
+
+negativo_ou_positivo = function(x){
+  if(x == 0){
+    print("nulo")
+  } else if (x < 0){
+    print("negativo")
+  } else {
+    print("positivo")
+  }
+}
+
+negativo_ou_positivo(3)
+negativo_ou_positivo(-3)
+negativo_ou_positivo(0)
+
+negativo_ou_positivo(media(20,-30))
+
+gerar_numero = function(valor = "nulo"){
+  if(valor == "nulo"){
+    return(0)
+  } else if (valor == "positivo"){
+    return(runif(n = 1,min = 1,max = 10))
+  } else if (valor == "negativo"){
+    return(-runif(n = 1,min = 1,max = 10))
+  }
+}
+gerar_numero("positivo")
+gerar_numero("negativo")
+
+sequencia = function(menor_numero, maior_numero, crescente = T){
+  if(crescente == TRUE){
+    while(menor_numero<=maior_numero){
+      print(menor_numero)
+      menor_numero = menor_numero + 1
+    }
+  }
+  if(crescente == FALSE){
+    while(menor_numero<=maior_numero){
+      print(maior_numero)
+      maior_numero = maior_numero - 1
+    } 
+  }
+}
+sequencia(1,10,crescente = F)
+sequencia(1,10,F)
+
+# Obs.: Falar sobre pacotes
+
+###################################
+
+#### Carregando Banco de Dados ####
+
 ##Exemplo de milho pipoca 
 ## Mostra o diretório de trabalho.
 getwd()
 setwd("C:\\Users\\Desktop\\...")
 getwd()
-
 
 ## Mostra os arquivos dentro no diretório.
 list.files()
@@ -305,26 +378,25 @@ sum(pipoca$CE>200)
 
 which(pipoca$CE>100)
 
-############
-#Conversão
+############################
+
+#### Conversão de Dados ####
+
+## o que é um fator?
 
 apropos("^as\\.") # lista de funções q fazem conversões
 # a função apropos lista as funções (mais para os pacotes que já foram carregados)
 
-#############
-########## CUIDADO ########
+#################
+
+#### Atenção ####
+
 ## Nunca converter fator em numerico diretamente
 # Factor==>character
 # character==>numeric
 ## Conversão.
 
-## o que é um fator?
-
-## Mostra informações da sessão, versões e pacotes.
-sessionInfo()
-
-## Mais informações.
-cbind(Sys.info())
+##################
 
 ## Salva a imagem (objetos criados) para serem carregados no futuro ou
 ## compartilhados.
@@ -336,9 +408,9 @@ rm(list=ls());ls()
 load("Embrapa.RData")
 ls() #carrega os objetos que ficou na memoria
 
-################
-######HELP######
-################
+##################
+###### HELP ######
+##################
 
 #RSiteSearch ("qtls")# procura no site
 
