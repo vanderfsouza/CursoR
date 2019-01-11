@@ -1,4 +1,4 @@
-Placa	Ambiente	Tratamento	Tecido	CAT
+Placa	Ambiente	Tratamento	Tecido	VAR1
 1	60	1	1	113.59
 1	60	2	1	121.70
 1	60	3	1	34.40
