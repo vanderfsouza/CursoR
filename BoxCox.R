@@ -20,7 +20,7 @@ boxplot(dados$CAT) # é possível observar muitos outlier
 
 boxcox(oz1, lambda = seq(0.1, 0.5, by = 0.01))
 
-dados$CATtrans = (dados$CAT^0.38)/0.38
+dados$CATtrans = (dados$CAT^0.38)/0.38 # 0.38 = resultado do boxcox neste caso. # Opções para as transformações em: https://www.statisticshowto.datasciencecentral.com/box-cox-transformation/
 
 boxplot(dados$CATtrans) # a distribuição não apresenta outlier
 
