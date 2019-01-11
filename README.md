@@ -25,8 +25,6 @@ Tornar os participantes aptos a utilizarem o software R para análises de dados 
 
 ## Inscrição
 
-*Em breve*
-
 [sig.ufla.br](https://sig.ufla.br/)
 
 ## Instrutor
