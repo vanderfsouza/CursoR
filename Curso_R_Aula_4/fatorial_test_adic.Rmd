@@ -1,0 +1,101 @@
+---
+title: "Título"
+author: "Autor"
+date: "dia de mês de ano"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Carregando o pacote "ExpDes" para análise do fatorial+controle
+
+```{r ExpDes}
+require(ExpDes)
+```
+
+## Estabelecendo caminho e carregando dados 
+
+ Escreva o que quiser... 
+
+```{r setwd}
+setwd("C:\\Users\\vande\\Desktop")
+germinacao = read.table("var2.txt", h=T)
+```
+
+## Fatiando os dados
+
+```{r fat}
+controle=germinacao[germinacao$trat=="controle",]
+fatores=germinacao[germinacao$trat=="10"|germinacao$trat=="20"|germinacao$trat=="40",]
+```
+
+## Nome da variável x
+
+```{r x1}
+fat2.ad.crd(fatores$epoca, fatores$trat, fatores$Rep, fatores$Var2,controle$Var2,quali = c(TRUE, TRUE), mcomp = "tukey", fac.names = c("Epoca", "Trat"), sigT = 0.05, sigF = 0.05)
+```
+
+# Teste de Dunnett
+
+## Carregando o pacote "multcomp" para o teste de Dunnett
+
+```{r multcomp, echo=TRUE}
+library(multcomp)
+```
+
+## Reagrupando os dados
+
+Fiz a modificação do nome "controle" para "0" apenas para evitar um erro de posição da testemunha no teste.
+
+```{r fat2}
+controle=germinacao[germinacao$trat=="controle",]
+controle$trat=0
+controle$trat=as.factor(controle$trat)
+fatores=germinacao[germinacao$trat=="10"|germinacao$trat=="20"|germinacao$trat=="40",]
+```
+
+## Teste de Dunnett
+
+1) Variável
+
+O teste de Dunnett foi desdobrado por época.
+
+1.1) Época 1
+
+```{r t1e1}
+epoca1=rbind(controle,fatores[fatores$epoca=="1",])
+aov1 <- aov(Var2 ~ trat, epoca1)
+set.seed(1)
+summary(glht(aov1, linfct=mcp(trat="Dunnett")))
+```
+
+1.2) Época 2
+
+```{r t1e2}
+epoca2=rbind(controle,fatores[fatores$epoca=="2",])
+aov2 <- aov(Var2 ~ trat, epoca2)
+set.seed(1)
+summary(glht(aov2, linfct=mcp(trat="Dunnett")))
+```
+
+1.3) Época 3
+
+```{r t1e3}
+epoca3=rbind(controle,fatores[fatores$epoca=="3",])
+aov3 <- aov(Var2 ~ trat, epoca3)
+set.seed(1)
+summary(glht(aov3, linfct=mcp(trat="Dunnett")))
+```
+
+1.4) Época 4
+
+```{r t1e4}
+epoca4=rbind(controle,fatores[fatores$epoca=="4",])
+aov4 <- aov(Var2 ~ trat, epoca4)
+set.seed(1)
+summary(glht(aov4, linfct=mcp(trat="Dunnett")))
+```
