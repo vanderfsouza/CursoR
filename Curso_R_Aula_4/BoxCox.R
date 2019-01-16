@@ -10,28 +10,28 @@ dados$Placa=as.factor(dados$Placa)
 dados$Tecido=as.factor(dados$Tecido)
 str(dados)
 
-oz1 = lm(CAT ~ Placa + Ambiente * Tratamento * Tecido, dados)
+oz1 = lm(VAR1 ~ Placa + Ambiente * Tratamento * Tecido, dados)
 
 plot(oz1)
 
-boxplot(dados$CAT) # È possÌvel observar muitos outlier
+boxplot(dados$VAR1) # √© poss√≠vel observar muitos outlier
 
 ##### Testando boxcox
 
 boxcox(oz1, lambda = seq(0.1, 0.5, by = 0.01))
 
-dados$CATtrans = (dados$CAT^0.38)/0.38 # 0.38 = resultado do boxcox neste caso. # OpÁıes para as transformaÁıes em: https://www.statisticshowto.datasciencecentral.com/box-cox-transformation/
+dados$VAR1Transf = (dados$VAR1^0.38)/0.38 # 0.38 = resultado do boxcox neste caso. # Op√ß√µes para as transforma√ß√µes em: https://www.statisticshowto.datasciencecentral.com/box-cox-transformation/
 
-boxplot(dados$CATtrans) # a distribuiÁ„o n„o apresenta outlier
+boxplot(dados$VAR1Transf) # a distribui√ß√£o n√£o apresenta outlier
 
-oz2 = lm(CATtrans ~ Placa + Ambiente * Tratamento * Tecido, dados)
+oz2 = lm(VAR1Transf ~ Placa + Ambiente * Tratamento * Tecido, dados)
 
-plot(oz2)  # apesar do boxplot n„o apresentar outlier, a parcela 14 ainda È um possÌvel problema
+plot(oz2)  # apesar do boxplot n√£o apresentar outlier, a parcela 14 ainda √© um poss√≠vel problema
 
-fat3.rbd(dados$Ambiente, dados$Tratamento, dados$Tecido, dados$Placa, dados$CATtrans, quali = c(TRUE, TRUE, TRUE), mcomp = "sk", fac.names = c("Ambiente", "Tratamento", "Tecido"), sigT = 0.05, sigF = 0.05)
+fat3.rbd(dados$Ambiente, dados$Tratamento, dados$Tecido, dados$Placa, dados$VAR1Transf, quali = c(TRUE, TRUE, TRUE), mcomp = "sk", fac.names = c("Ambiente", "Tratamento", "Tecido"), sigT = 0.05, sigF = 0.05)
 
-##### Testando substituiÁ„o da parcela 14
+##### Testando substitui√ß√£o da parcela 14
 
-dados$CATtrans[14] = mean(dados$CATtrans) # vamos substituir o trat 14 pela mÈdia geral da vari·vel 
+dados$VAR1Transf[14] = mean(dados$VAR1Transf) # vamos substituir o trat 14 pela m√©dia geral da vari√°vel 
 
-fat3.rbd(dados$Ambiente, dados$Tratamento, dados$Tecido, dados$Placa, dados$CATtrans, quali = c(TRUE, TRUE, TRUE), mcomp = "sk", fac.names = c("Ambiente", "Tratamento", "Tecido"), sigT = 0.05, sigF = 0.05) # agora sim!
+fat3.rbd(dados$Ambiente, dados$Tratamento, dados$Tecido, dados$Placa, dados$VAR1Transf, quali = c(TRUE, TRUE, TRUE), mcomp = "sk", fac.names = c("Ambiente", "Tratamento", "Tecido"), sigT = 0.05, sigF = 0.05) # agora sim!
